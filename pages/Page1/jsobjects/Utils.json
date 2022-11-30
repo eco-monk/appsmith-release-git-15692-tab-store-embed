@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\tsetTab: async () => {\n\t\tif(appsmith.store.jwt)\n        {\n              await get_userinfo.run();\n              await storeValue('tabValue',\"Bob Data\");\n        }\n        else\n        {\n             await storeValue('tabValue',\"Login\");\n        }\n\t},\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "Page1_Utils",
   "deleted": false,
